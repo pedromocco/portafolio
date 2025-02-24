@@ -5,7 +5,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="grid justify-center max-w-2xl mx-auto">
+    <div className="grid justify-center max-w-2xl mx-auto m-5">
       <Profile />
       <Experience />
       <Projects />

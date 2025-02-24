@@ -27,14 +27,14 @@ const Experience = () => {
   ];
 
   return (
-    <div className="p-8">
+    <div className="p-8 mt-8">
       <h2 className="text-3xl font-bold mb-8">Experiencias</h2>
       <div className="relative">
-        <div className="absolute w-1 bg-black h-full left-6 top-0 rounded"></div>
+        <div className="absolute w-1 bg-black h-full left-2 md:left-6  top-0 rounded"></div>
         {timelineItems.map((item, index) => (
           <div key={index} className="flex flex-row items-start mb-8">
             <div className="relative">
-              <div className="w-3 h-3 bg-black rounded-full mt-2 ml-6"></div>
+              <div className="w-3 h-3 bg-black rounded-full mt-2 ml-1 md:ml-6"></div>
             </div>
             <div className="ml-8">
               <h3 className="text-2xl font-semibold mb-2">{item.stack}</h3>

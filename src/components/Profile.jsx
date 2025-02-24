@@ -4,10 +4,10 @@ import React from "react";
 const Profile = () => {
   return (
     <>
-      <div className="flex gap-5 mt-14">
+      <div className="flex flex-col md:flex-row text-center md:text-left gap-5 mt-14 items-center md:items-start">
         <img
-          className="w-[200px] h-[200px] object-cover rounded-full"
-          src="../../public/profile.jpg"
+          className="w-[200px] h-[200px] object-cover rounded-full border-10 border-gray-100 shadow-lg"
+          src="profile.png"
           alt=""
         />
 
@@ -15,7 +15,7 @@ const Profile = () => {
           <h1 className="text-5xl font-bold mb-3 text-black">
             Fullstack Developer Junior
           </h1>
-          <div className="flex gap-4">
+          <div className="flex gap-4 justify-center md:justify-start">
             <h2 className="text-2xl font-semibold">Pedro Moccó</h2>
             <Badge
               size="sm"
@@ -29,19 +29,19 @@ const Profile = () => {
             3 años de experiencia en desarrollo web. Productivo y emocionado
             diariamente por aprender y trabajar.
           </p>
-          <div className="flex flex-wrap gap-2 mt-3">
+          <div className="flex justify-center md:justify-start gap-2 mt-3">
             <Tooltip content="github.com/pedromoco">
-              <Button pill size="xs" color="dark">
+              <Button pill size="xs" color="dark" href="https://github.com/pedromocco/" target="_blank" rel="noopener noreferrer">
                 Github
               </Button>
             </Tooltip>
             <Tooltip content="linkedin.com/pedromoco">
-              <Button pill size="xs" color="blue">
+              <Button pill size="xs" color="blue" href="https://www.linkedin.com/in/pedromocco/" target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </Button>
             </Tooltip>
             <Tooltip content="pedromocco00@gmail.com">
-              <Button pill size="xs" color="failure">
+              <Button pill size="xs" color="failure" href="mailto:pedromocco00@gmail.com" target="_blank" rel="noopener noreferrer">
                 Correo
               </Button>
             </Tooltip>
