@@ -9,6 +9,7 @@ import {
   faReact,
   faJs,
   faCss3,
+  faPython
 } from "@fortawesome/free-brands-svg-icons";
 import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 
@@ -39,6 +40,10 @@ const Skills = () => {
                 <li className="flex items-center">
                   <FontAwesomeIcon icon={faJs} className="mr-2" />
                   Javascript
+                </li>
+                <li className="flex items-center">
+                  <FontAwesomeIcon icon={faPython} className="mr-2" />
+                  Python
                 </li>
                 <li className="flex items-center">
                   <FontAwesomeIcon icon={faDatabase} className="mr-2" />
