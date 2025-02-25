@@ -23,7 +23,7 @@ const Skills = () => {
         <div className="mb-12 p-6 rounded-lg">
           <h3 className="text-2xl font-semibold mb-4">Habilidades Técnicas:</h3>
           <div className="grid grid-cols-1 justify-center md:grid-cols-3 gap-6">
-            <div className="border p-4 rounded-lg">
+            <div className="bg-black/30 border p-4 rounded-lg hover:scale-105 transform transition ease-in-out">
               <h4 className="text-lg font-medium mb-2 flex items-center underline">
                 Lenguajes
               </h4>
@@ -47,7 +47,7 @@ const Skills = () => {
               </ul>
             </div>
 
-            <div className="border p-4 rounded-lg">
+            <div className="bg-black/30 border p-4 rounded-lg hover:scale-105 transform transition ease-in-out">
               <h4 className="text-lg font-medium mb-2 flex items-center underline">
                 Frameworks
               </h4>
@@ -64,7 +64,7 @@ const Skills = () => {
               </ul>
             </div>
 
-            <div className="border p-4 rounded-lg">
+            <div className="bg-black/30 border p-4 rounded-lg hover:scale-105 transform transition ease-in-out">
               <h4 className="text-lg font-medium mb-2 flex items-center underline">
                 Herramientas
               </h4>
@@ -90,11 +90,11 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className=" p-6 rounded-lg mb-12">
+        <div className=" p-6 rounded-lg mb-12 ">
           <h3 className="text-2xl font-semibold mb-4 flex items-center">
             Habilidades Blandas:
           </h3>
-          <ul className="border p-4 rounded-lg list-disc list-inside">
+          <ul className="bg-black/30 border p-4 rounded-lg list-disc list-inside hover:scale-105 transform transition ease-in-out">
             <li>Manejo de estrés alto</li>
             <li>Trabajo en equipo</li>
             <li>Capacidad de tolerar cambios</li>

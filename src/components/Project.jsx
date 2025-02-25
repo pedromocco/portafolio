@@ -5,7 +5,7 @@ const ProjectCard = ({ name, description, image, codeLink, demoLink }) => {
   const [openModal, setOpenModal] = useState(false);
   return (
     <>
-      <div className="flex justify-between gap-6 m-3 border border-gray-200 rounded-lg shadow-sm p-4 hover:scale-105 transform transition ease-in-out">
+      <div className="bg-black/30 flex justify-between gap-6 m-3 border border-gray-200 rounded-lg shadow-sm p-4 hover:scale-105 transform transition ease-in-out">
         <h3 className="text-xl font-bold">{name}</h3>
         <Button.Group>
           <Button color="dark" onClick={() => setOpenModal(true)}>
