@@ -1,3 +1,6 @@
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Experience = () => {
   const timelineItems = [
     {
@@ -28,22 +31,25 @@ const Experience = () => {
 
   return (
     <div className="p-8 mt-8">
-      <h2 className="text-3xl font-bold mb-8">Experiencias</h2>
+      <div className="flex items-center mb-8 mt-8">
+      <h2 className="text-3xl font-bold">Experiencias</h2>
+      <FontAwesomeIcon icon={faLaptopCode} size="2x" className="ml-3" />
+      </div>
       <div className="relative">
-        <div className="absolute w-1 bg-black h-full left-2 md:left-6  top-0 rounded"></div>
+        <div className="absolute w-1 bg-white h-full left-2 md:left-7  top-0 rounded"></div>
         {timelineItems.map((item, index) => (
           <div key={index} className="flex flex-row items-start mb-8">
             <div className="relative">
-              <div className="w-3 h-3 bg-black rounded-full mt-2 ml-1 md:ml-6"></div>
+              <div className="w-3 h-3 bg-white rounded-full mt-2 ml-1 md:ml-6"></div>
             </div>
             <div className="ml-8">
               <h3 className="text-2xl font-semibold mb-2">{item.stack}</h3>
               <span className="font-semibold mb-2">{item.title}</span>
-              <p className="text-sm mb-2">{item.date}</p>
+              <p className="text-sm mb-2 text-blue-300">{item.date}</p>
               <p className=" mb-2">{item.description}</p>
               <div className=" mb-2">
                 <p className="font-semibold mb-2">Tecnologías:</p>
-                <span className="text-gray-600">{item.technologies.join(", ")}</span>
+                <span className="text-blue-300">{item.technologies.join(", ")}</span>
               </div>
             </div>
           </div>

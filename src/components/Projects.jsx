@@ -1,5 +1,7 @@
 import React from "react";
 import ProjectCard from "./Project";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
   {
@@ -29,8 +31,11 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="">
-      <h2 className="text-3xl font-bold mb-8">Proyectos</h2>
+    <div className="container justify-center mx-auto p-3">
+      <div className="flex items-center mb-8 mt-8">
+      <h2 className="text-3xl font-bold">Proyectos</h2>
+    <FontAwesomeIcon icon={faBriefcase} size="2x" className="ml-3"/>
+      </div>
       {projects.map((project, index) => (
         <ProjectCard
           key={index}

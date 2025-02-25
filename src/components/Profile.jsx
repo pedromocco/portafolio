@@ -1,4 +1,4 @@
-import { Badge, Button, Tooltip } from "flowbite-react";
+import { Badge, Button, Clipboard, Tooltip } from "flowbite-react";
 import React from "react";
 
 const Profile = () => {
@@ -12,7 +12,7 @@ const Profile = () => {
         />
 
         <div>
-          <h1 className="text-5xl font-bold mb-3 text-black">
+          <h1 className="text-5xl font-bold mb-3">
             Fullstack Developer Junior
           </h1>
           <div className="flex gap-4 justify-center md:justify-start">
@@ -25,24 +25,57 @@ const Profile = () => {
               Disponible para trabajar
             </Badge>
           </div>
-          <p className="mt-2">
+          <p className="mt-2 px-1">
             3 años de experiencia en desarrollo web. Productivo y emocionado
             diariamente por aprender y trabajar.
           </p>
           <div className="flex justify-center md:justify-start gap-2 mt-3">
             <Tooltip content="github.com/pedromoco">
-              <Button pill size="xs" color="dark" href="https://github.com/pedromocco/" target="_blank" rel="noopener noreferrer">
+              <Button
+                pill
+                size="xs"
+                color="dark"
+                href="https://github.com/pedromocco/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Github
               </Button>
             </Tooltip>
             <Tooltip content="linkedin.com/pedromoco">
-              <Button pill size="xs" color="blue" href="https://www.linkedin.com/in/pedromocco/" target="_blank" rel="noopener noreferrer">
+              <Button
+                pill
+                size="xs"
+                color="blue"
+                href="https://www.linkedin.com/in/pedromocco/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 LinkedIn
               </Button>
             </Tooltip>
             <Tooltip content="pedromocco00@gmail.com">
-              <Button pill size="xs" color="failure" href="mailto:pedromocco00@gmail.com" target="_blank" rel="noopener noreferrer">
+              <Button
+                pill
+                size="xs"
+                color="failure"
+                href="mailto:pedromocco00@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Correo
+              </Button>
+            </Tooltip>
+            <Tooltip content="+58(414)185-7541">
+              <Button
+                pill
+                size="xs"
+                color="green"
+                href="https://wa.me/584141857541"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Whatsapp
               </Button>
             </Tooltip>
             <Button pill size="xs" color="warning">
