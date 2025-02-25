@@ -6,13 +6,13 @@ const Profile = () => {
     <>
       <div className="flex flex-col md:flex-row text-center md:text-left gap-5 mt-14 items-center md:items-start">
         <img
-          className="w-[200px] h-[200px] object-cover rounded-full border-10 border-gray-100 shadow-lg"
+          className="w-[200px] h-[200px] object-cover rounded-full border-10 border-gray-100 shadow-lg bg-blue-500"
           src="profile.png"
           alt=""
         />
 
         <div>
-          <h1 className="text-5xl font-bold mb-3">
+          <h1 className="text-5xl font-bold mb-3 shadown">
             Fullstack Developer Junior
           </h1>
           <div className="flex gap-4 justify-center md:justify-start">
@@ -78,7 +78,14 @@ const Profile = () => {
                 Whatsapp
               </Button>
             </Tooltip>
-            <Button pill size="xs" color="warning">
+            <Button
+              href="https://drive.google.com/file/d/179aDiZaHqsKDk4FUYvFIFp_4c0UtV37M/view?usp=sharing"
+              pill
+              size="xs"
+              color="warning"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Cv
             </Button>
           </div>
