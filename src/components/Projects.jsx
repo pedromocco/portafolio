@@ -27,6 +27,13 @@ const projects = [
     codeLink: "https://github.com/pedromocco/vera-01",
     demoLink: "https://vera-01.vercel.app/",
   },
+  {
+    name:"Tetris P5.JS",
+    description:"Está hecho con HTML5, CSS y Javascript, apoyado en la tecnología de la biblioteca p5.js para la programación y lógica física del juego en sí, además de implementar sonidos y música (hechos por mí también, de hecho) para la experiencia completa de lo que se puede hacer con estas tecnologías.",
+    image:"tetrisp5js.webp",
+    codeLink:"https://github.com/pedromocco/tetris",
+    demoLink:"https://tetrisp5js.vercel.app",
+  }
 ];
 
 const Projects = () => {
